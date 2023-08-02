@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#mainBlock {
+  display: flex;
+}
+#rightSide {
+  background-color: #001411;
+  width: 100%;
+  color: white;
+}

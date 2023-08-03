@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
   background: rgb(242, 229, 238);
   background: linear-gradient(
     180deg,
@@ -20,6 +19,9 @@ body {
   letter-spacing: 2px;
   height: 100vh;
   width: 100vw;
+}
+.main {
+  display: flex;
 }
 /* Left side of page manipulations */
 /* Add an image to left side of page */
@@ -71,10 +73,13 @@ body {
   margin: 0 50px;
 }
 .unrealService {
-  width: 65ch;
+  width: 100%;
   font-size: 2rem;
-  margin-top: 200px;
-  margin-bottom: 50px;
+  margin: 20px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
 }
 legend {
   font-size: 1.7rem;
@@ -83,13 +88,14 @@ legend {
 }
 .formGrid {
   display: flex;
-  gap: 100px;
+  flex-wrap: wrap;
 }
 .leftSideForm {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
+  margin-right: 100px;
 }
 .rightSideForm {
   display: flex;
@@ -120,6 +126,7 @@ label {
 }
 .submitBtn {
   font-size: 1.2rem;
+  width: 200px;
   background-color: transparent;
   border: 3px solid black;
   border-radius: 5px;

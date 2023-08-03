@@ -3,6 +3,7 @@ body {
   padding: 0;
   display: flex;
 }
+/* Left side of page manipulations */
 /* Add an image to left side of page */
 #leftSide {
   background-image: url(/IMG/BackgroundImage.avif);
@@ -13,9 +14,11 @@ body {
   width: 40%;
   position: relative;
 }
-a {
+/* Color links to white */
+#leftSide a {
   color: white;
 }
+/* Positioned logo image and add background on it */
 #logoImg {
   position: absolute;
   margin-top: 120px;
@@ -24,16 +27,20 @@ a {
   display: flex;
   justify-content: center;
 }
-.creatorName {
+/* Positioned creator name */
+.creatorName p {
   position: absolute;
   color: white;
   bottom: 0;
   width: 100%;
   text-align: center;
+  margin: 10px 0;
 }
 
+/* Right side of page manipulations */
 #rightSide {
   height: 100vh;
   width: 60%;
   position: relative;
+  margin-left: px;
 }

@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Add div on left with background image -->
@@ -42,24 +42,24 @@
           <!-- Inside form add all input elements -->
           <div class="leftSideForm">
             <label for="name">First name</label>
-            <input type="text" name="name" />
+            <input type="text" name="name" maxlength="100" required placeholder="e.g. Stanislav" />
             <label for="email">E-mail</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" required placeholder="e.g. apple@google.com" />
             <label for="password">Password</label>
-            <input type="password" name="password" />
+            <input type="password" name="password" required minlength="8" maxlength="25" />
           </div>
           <div class="rightSideForm">
             <label for="surname">Last name</label>
-            <input type="text" name="surname" />
+            <input type="text" name="surname" required maxlength="100" placeholder="e.g. Pjenkejtukevich" />
             <label for="phoneNumber">Phone number</label>
-            <input type="tel" name="phoneNumber" />
+            <input type="tel" name="phoneNumber" required pattern="0[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="e.g. 0xxx-xx-xxx" />
             <label for="passwordConfirm">Password confirmation</label>
-            <input type="password" name="passwordConfirm" />
+            <input type="password" name="passwordConfirm" required minlength="8" maxlength="25" />
           </div>
         </div>
+        <!-- Add a button create account -->
+        <button type="submit" class="submitBtn">Create account</button>
       </form>
-      <!-- After form add a button create account -->
-      <button type="submit" class="submitBtn">Create account</button>
       <!-- Under button add text if you already have an account and a link -->
       <p class="logIn">
         Already have an account?

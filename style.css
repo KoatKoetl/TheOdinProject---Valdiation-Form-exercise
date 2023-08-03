@@ -2,9 +2,20 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: #f4e7f0;
+  background: rgb(242, 229, 238);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 229, 238, 1) 10%,
+    rgba(236, 225, 231, 1) 25%,
+    rgba(221, 219, 222, 1) 45%,
+    rgba(171, 181, 180, 1) 65%,
+    rgba(37, 71, 67, 0.6) 83%,
+    rgba(3, 29, 30, 0.7) 100%
+  );
   font-family: "Anton", sans-serif;
   font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 /* Left side of page manipulations */
 /* Add an image to left side of page */
@@ -87,6 +98,15 @@ legend {
 }
 input {
   margin-bottom: 45px;
+  height: 1.6rem;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 1.3rem;
+  font-family: "Anton", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  box-shadow: rgba(60, 60, 214, 0.1) 10px 8px 5px, rgba(19, 19, 172, 0.1) 0px 16px 56px, rgba(29, 29, 212, 0.1) 0px 24px 80px;
 }
 label {
   font-size: 1.4em;
@@ -96,4 +116,29 @@ label {
 }
 .submitBtn {
   font-size: 1.2rem;
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.submitBtn:hover {
+  background-color: #2e5538;
+  color: white;
+  border: 3px solid white;
+}
+.submitBtn:active {
+  background-color: #243d2a;
+}
+input:valid {
+  border: 3px solid green;
+}
+input:invalid {
+  border: 3px solid rgb(134, 2, 2);
+}
+.logIn a {
+  color: #2e5538;
+  text-decoration: none;
+}
+.logIn a:active {
+  color: #243d2a;
 }

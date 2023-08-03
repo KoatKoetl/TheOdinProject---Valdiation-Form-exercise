@@ -26,7 +26,7 @@ body {
 /* Left side of page manipulations */
 /* Add an image to left side of page */
 #leftSide {
-  background-image: url(/IMG/BackgroundImage.png);
+  background-image: url(IMG/BackgroundImage.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

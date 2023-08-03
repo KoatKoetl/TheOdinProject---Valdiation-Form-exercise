@@ -6,13 +6,17 @@
     <title>ValidationForm</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Add div on left with background image -->
     <div id="leftSide">
       <!-- Add a logo on the top  -->
       <div id="logoImg">
-        <a href="#"><img src="IMG/Logo-removebg-preview.png" alt="logo of the site" /></a>
+        <a href="#"><img src="https://www.theodinproject.com/mstile-310x310.png" alt="logo of the site" /></a>
+        <p>The ODIN Project</p>
       </div>
       <!-- Add a creators name -->
       <div class="creatorName">
@@ -29,24 +33,35 @@
       <!-- Add text that say it is unreal service -->
       <p class="unrealService">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa expedita deserunt iste adipisci cumque quae maiores repellendus,
-        pariatur beatae. Laboriosam recusandae ea, id est eligendi quo reiciendis non omnis cupiditate facere nobis tempora sit! Maxime, est
-        eum, obcaecati minus illo ad laudantium labore tempore asperiores fugit, eaque numquam cum assumenda.
+        pariatur beatae. Laboriosam recusandae ea, id est eligendi quo reiciendis non omnis cupiditate facere nobis tempora sit!
       </p>
       <!-- Add form with legend "Let's do this" -->
       <form action="/" method="get">
         <legend>Let's do this!</legend>
-        <!-- Inside form add all input elements -->
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
+        <div class="formGrid">
+          <!-- Inside form add all input elements -->
+          <div class="leftSideForm">
+            <label for="name">First name</label>
+            <input type="text" name="name" />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" />
+            <label for="password">Password</label>
+            <input type="password" name="password" />
+          </div>
+          <div class="rightSideForm">
+            <label for="surname">Last name</label>
+            <input type="text" name="surname" />
+            <label for="phoneNumber">Phone number</label>
+            <input type="tel" name="phoneNumber" />
+            <label for="passwordConfirm">Password confirmation</label>
+            <input type="password" name="passwordConfirm" />
+          </div>
+        </div>
       </form>
       <!-- After form add a button create account -->
-      <button type="submit">Create account</button>
+      <button type="submit" class="submitBtn">Create account</button>
       <!-- Under button add text if you already have an account and a link -->
-      <p>
+      <p class="logIn">
         Already have an account?
         <a href="#">Log in</a>
       </p>

@@ -64,10 +64,19 @@ body {
 #rightSide {
   height: 100vh;
   width: 60%;
-  position: relative;
   margin: 0 50px;
 }
-
+.unrealService {
+  width: 65ch;
+  font-size: 2rem;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+legend {
+  font-size: 1.7rem;
+  padding: 0;
+  margin-bottom: 0.6rem;
+}
 .formGrid {
   display: flex;
   gap: 100px;
@@ -84,18 +93,6 @@ body {
   align-items: left;
   justify-content: center;
 }
-
-.unrealService {
-  width: 65ch;
-  font-size: 2rem;
-  margin-top: 200px;
-  margin-bottom: 50px;
-}
-legend {
-  font-size: 1.7rem;
-  padding: 0;
-  margin-bottom: 0.6rem;
-}
 input {
   margin-bottom: 45px;
   height: 1.6rem;
@@ -108,11 +105,14 @@ input {
   letter-spacing: 2px;
   box-shadow: rgba(60, 60, 214, 0.1) 10px 8px 5px, rgba(19, 19, 172, 0.1) 0px 16px 56px, rgba(29, 29, 212, 0.1) 0px 24px 80px;
 }
+input:valid {
+  border: 3px solid green;
+}
+input:invalid {
+  border: 3px solid rgb(134, 2, 2);
+}
 label {
   font-size: 1.4em;
-}
-.logIn {
-  font-size: 1.2rem;
 }
 .submitBtn {
   font-size: 1.2rem;
@@ -129,11 +129,8 @@ label {
 .submitBtn:active {
   background-color: #243d2a;
 }
-input:valid {
-  border: 3px solid green;
-}
-input:invalid {
-  border: 3px solid rgb(134, 2, 2);
+.logIn {
+  font-size: 1.2rem;
 }
 .logIn a {
   color: #2e5538;

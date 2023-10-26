@@ -1,5 +1,5 @@
 # TheOdinProject---Sign-up Form
-This project is intended to give a chance to flex with some CSS tricks. 
+This project is intended to give a chance to flex with some CSS tricks. <br>
 This time it’s a sign-up form for an imaginary service.
 The example taken is a ready-made from Project: 
 Sign-up Form. Intermediate HTML and CSS Course. 

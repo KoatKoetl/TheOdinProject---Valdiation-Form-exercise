@@ -1,4 +1,5 @@
 # TheOdinProject---Sign-up Form
+The finished work can be seen at this link: https://koatkoetl.github.io/TheOdinProject---Valdiation-Form-exercise/ <br>
 This project is intended to give a chance to flex with some CSS tricks. <br>
 This time it’s a sign-up form for an imaginary service. <br>
 The example taken is a ready-made from Project: Sign-up Form. Intermediate HTML and CSS Course. <br>
